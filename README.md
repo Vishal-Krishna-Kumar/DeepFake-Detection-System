@@ -88,21 +88,7 @@ python run.py --cfg resnet50.yaml
 
 Please refer to [VISUALIZE.md](./VISUALIZE.md) for detailed instructions.
 
-## Contributors
-
-PyDeepFakeDet is written and maintained by [Wenhao Ouyang](https://github.com/AllenOris), [Chao Zhang](https://github.com/zhangchaosd), [Zhenxin Li](https://github.com/woxihuanjiangguo), and [Junke Wang](https://www.wangjunke.info).
-
 ## License
 
-PyDeepFakeDet is released under the [MIT license](https://opensource.org/licenses/MIT).
+DeepFake Net is released under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Citations
-
-```bibtex
-@inproceedings{wang2021m2tr,
-  title={M2TR: Multi-modal Multi-scale Transformers for Deepfake Detection},
-  author={Wang, Junke and Wu, Zuxuan and Ouyang, Wenhao and Han, Xintong and Chen, Jingjing and Lim, Ser-Nam and Jiang, Yu-Gang},
-  booktitle={ICMR},
-  year={2022}
-}
-```
