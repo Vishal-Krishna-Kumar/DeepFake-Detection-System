@@ -1,8 +1,5 @@
-<p align="center">
-  <p align="center">
-    <i> An integrated and scalable library for Deepfake detection research.</i>
-  </p>
- </p>
+> ⚡ **DeepFake Detection System** is a research-driven, production-ready framework designed to detect manipulated media using state-of-the-art computer vision & transformer-based architectures.  
+> This project provides an extensible pipeline for training, evaluating, and benchmarking multiple models on widely used Deepfake datasets — built for researchers, developers, and real-world security applications.
 
 ## Introduction
 
@@ -11,6 +8,22 @@ Deep Fake Net  is an integrated and scalable Deepfake detection tool. The goal i
 <p align="center">
  <img width="80%" src="./demo/demo.gif" />
 </p>
+
+
+
+## 🔍 Motivation
+The rapid growth of AI-generated media has made it difficult to distinguish real videos from manipulated ones.  
+Deepfakes pose serious threats in:
+- misinformation & fake news  
+- political manipulation  
+- identity theft & cybercrime  
+- privacy & legal evidence violation  
+
+Therefore, this project aims to develop a **scalable, research-ready, multi-model Deepfake Detection System**.
+
+
+
+
 
 This repository includes implementations of both CNN-based and Transformer-based methods:
 
@@ -62,6 +75,18 @@ The baseline Models on [Celeb-DF](https://github.com/yuezunli/celeb-deepfakefore
 | ViT | 96.73 | [CelebDF](https://drive.google.com/file/d/1gzh9WlUE50sQ3meVAiagujADi6VR4t5F/view?usp=sharing) |
 | M2TR |99.76 |[CelebDF](https://drive.google.com/file/d/19mPqJ1DzkPr89VHVjHD2b0dqiZjufZnG/view?usp=sharing) |
 
+
+
+## 🧠 System Architecture
+The following pipeline is followed:
+
+Real/Fake Video ➜ Frame Extraction ➜ Preprocessing ➜ CNN/Transformer Model ➜ Classification
+
+![architecture_diagram](docs/architecture.png)  # Add image in /docs folder
+
+
+
+
 ## Installation
 
 - We use Python == 3.9.0, torch==1.11.0, torchvision==1.12.0.
@@ -82,27 +107,21 @@ Specify the path of your local dataset in `./configs/resnet50.yaml`, and then ru
 ```
 python run.py --cfg resnet50.yaml
 ```
+### 🛠 Train Model
+python run.py --cfg resnet50.yaml --mode train
+
+### 🔍 Evaluate Model
+python run.py --cfg resnet50.yaml --mode test
+
+### 📦 Inference on Single Image
+python inference.py --image path/to/image.jpg --model weights/resnet50.pth
 
 
 ## Visualization tools
 
 Please refer to [VISUALIZE.md](./VISUALIZE.md) for detailed instructions.
 
-## Contributors
-
-PyDeepFakeDet is written and maintained by [Wenhao Ouyang](https://github.com/AllenOris), [Chao Zhang](https://github.com/zhangchaosd), [Zhenxin Li](https://github.com/woxihuanjiangguo), and [Junke Wang](https://www.wangjunke.info).
-
 ## License
 
-PyDeepFakeDet is released under the [MIT license](https://opensource.org/licenses/MIT).
+DeepFake Net is released under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Citations
-
-```bibtex
-@inproceedings{wang2021m2tr,
-  title={M2TR: Multi-modal Multi-scale Transformers for Deepfake Detection},
-  author={Wang, Junke and Wu, Zuxuan and Ouyang, Wenhao and Han, Xintong and Chen, Jingjing and Lim, Ser-Nam and Jiang, Yu-Gang},
-  booktitle={ICMR},
-  year={2022}
-}
-```
