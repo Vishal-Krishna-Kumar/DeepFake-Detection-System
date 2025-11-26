@@ -1,9 +1,3 @@
-# PyDeepFakeDet
-
-<p align="center">
- <img width="90%" src="./demo/logo.png" />
-</p>
-
 <p align="center">
   <p align="center">
     <i> An integrated and scalable library for Deepfake detection research.</i>
