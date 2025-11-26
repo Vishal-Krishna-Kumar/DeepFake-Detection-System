@@ -1,8 +1,5 @@
-<p align="center">
-  <p align="center">
-    <i> An integrated and scalable library for Deepfake detection research.</i>
-  </p>
- </p>
+> ⚡ **DeepFake Detection System** is a research-driven, production-ready framework designed to detect manipulated media using state-of-the-art computer vision & transformer-based architectures.  
+> This project provides an extensible pipeline for training, evaluating, and benchmarking multiple models on widely used Deepfake datasets — built for researchers, developers, and real-world security applications.
 
 ## Introduction
 
