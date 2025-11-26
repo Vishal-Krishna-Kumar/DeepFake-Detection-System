@@ -6,7 +6,7 @@
 
 ## Introduction
 
-PyDeepFakeDet is an integrated and scalable Deepfake detection tool developed by [Fudan Vision and Learning Lab](https://fvl.fudan.edu.cn/). The goal is to provide state-of-the-art Deepfake detection Models as well as interfaces for the training and evaluation of new Models on commonly used Deepfake datasets. 
+Deep Fake Net  is an integrated and scalable Deepfake detection tool. The goal is to provide state-of-the-art Deepfake detection Models as well as interfaces for the training and evaluation of new Models on commonly used Deepfake datasets. 
 
 <p align="center">
  <img width="80%" src="./demo/demo.gif" />
